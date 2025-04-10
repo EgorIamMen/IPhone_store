@@ -1,0 +1,101 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*::before,
+*::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+} /* срабатывает при нажатии или в момент фокуса элемента */
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1; /* отступ между строками */
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+} /* убирает крестик при вводе текста */
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+} /* убирает различные отступы внутри кнопок */
+a,
+a:visited {
+	text-decoration: none;
+} /* при посещении сайта меняются свойства */
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+} /* стандартный вес текста */
+
+@font-face {
+	font-family: "Inter";
+	src: url("/fonts/Inter-Regular.woff2") format("woff2"),
+	url("/fonts/Inter-Regular.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;	
+}
+@font-face {
+	font-family: "Inter";
+	src: url("/fonts/Inter-Bold.woff2") format("woff2"),
+	url("/fonts/Inter-Bold.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;	
+}
+
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
